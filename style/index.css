@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+/* FristContainer */
+.container {
+    margin: 0 10rem;
+}
+.introFlexContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.introDetail {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.introDetail > h2 {
+    color: #D9D9D9;
+    font-size: 3rem;
+    margin: 0
+}
+.introDetail > h1 {
+    color: #332F29;
+    font-size: 4.5rem;
+    margin: 13px 0 0;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+.introImg {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+}
+.introImg > img {
+    max-width: 66%;
+    flex: 1 0;
+    /* min-width: 311px; */
+}
+.introImgBottom {
+    display: flex;
+    flex: 1;
+}
+.introImgBottom > img {
+    padding: 1.2rem 1.2rem 0 0;
+    box-sizing: border-box;
+    width: 50%;
+    flex: 1 1;
+}
+/* SeconContainer */
+.containerBottom {
+    background-color: #E3DCD2;
+}
+.seconFlexContainer {
+    display: flex;
+    margin: 0 10rem;
+}
+.seconFlexContainer > img {
+    max-width: 50%;
+}
+.seconDetail{
+    margin: 20px 10px 50px 53px;
+    line-height: 1.6;
+}
+.seconDetail > h2 {
+    font-family: 'times-new-roman';
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin: 50px 20px 0;
+}
+.seconDetail > h1 {
+    font-family: 'Lobster', cursive;;
+    font-size: 4.5rem;
+    color: #332F29;
+    line-height: 1.1;
+    margin: -30px 20px 0 53px;
+}

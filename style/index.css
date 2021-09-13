@@ -1,8 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
 body {
     font-family: 'Open Sans',sans-serif;
+    margin: 0;
 }
+/* navbar */
+.navbar {
+    background-color: #101010;
+    overflow: hidden;
+    position: -webkit- sticky;
+    position: sticky;
+    top: 0;
+}
+.navbar a {
+    float: left;
+    color: #faebd7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover { 
+    background-color: #FFBB9A;
+    color: #101010;
+
+}
+.seachContainer {
+    float: right;
+}
+.seachContainer input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    /* font-size: 17px; */
+    border: none;
+}
+.seachContainer button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #FFBB9A;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* FristContainer */
 .container {
     margin: 0 10rem;
@@ -50,31 +93,152 @@ body {
     width: 50%;
     flex: 1 1;
 }
-/* SeconContainer */
-.containerBottom {
+/* SecondContainer */
+.secondcontainer {
     background-color: #E3DCD2;
 }
-.seconFlexContainer {
+.secondFlexContainer {
     display: flex;
     margin: 0 10rem;
 }
-.seconFlexContainer > img {
+.secondFlexContainer > img {
     max-width: 50%;
 }
-.seconDetail{
+.secondDetail {
     margin: 20px 10px 50px 53px;
     line-height: 1.6;
 }
-.seconDetail > h2 {
+.secondDetail > h2 {
     font-family: 'times-new-roman';
     font-size: 3rem;
     color: #FFFFFF;
     margin: 50px 20px 0;
+    font-weight: 400;
 }
-.seconDetail > h1 {
-    font-family: 'Lobster', cursive;;
+.secondDetail > h1 {
+    font-family: 'Lobster', cursive;
     font-size: 4.5rem;
     color: #332F29;
     line-height: 1.1;
-    margin: -30px 20px 0 53px;
+    margin: -40px 20px 0 53px;
+}
+/* thirdcontainer */
+.thirdcontainer {
+    background-color: #332F29;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    row-gap: 7rem;
+    column-gap: 5rem;
+    margin: 0 10rem 0 10rem;
+    text-align: left;
+    color: #ffffff;
+    padding:7rem 4rem;
+
+}
+.grid-container p {
+    line-height: 1.7;
+}
+/* fouthcontainer */
+.textOnTop {
+    margin: 0 10rem;
+}
+.textOnTop >  h2 {
+    font-size: 3rem;
+    font-family: 'times-new-roman';
+    margin: 23px 20px 0 53px;
+    color: #C0C0C0;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.textOnTop > h1 {
+    font-size: 6rem;
+    font-family:'Lobster', cursive;;
+    margin: -50px 20px 0 53px;
+    color: #111111;
+    padding: 20px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+.gridPhoto {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-auto-rows: 360px;
+    margin: 3rem 15rem;
+}
+.gridPhoto > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-tall {
+    grid-template-columns: span 2 / auto;
+}
+.card-wide {
+    grid-column: span 2 / auto;
+    background-size: contain;
+}
+
+/* fivecontainer */
+.fivecontainer{
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/8d4dcca9aa8c598289731171/ad9653de83affa5857d649154b0b3764.jpeg");
+    height: 704px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.fivecontainer > h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family:'Lobster', cursive;
+    font-size: 6rem;
+    position: relative;
+    line-height: 1.1;
+    font-weight: 400;
+    padding: 350px;
+}
+
+/* finalcontainer */
+/* .img {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/67551566a87d5b14be38968b/9935dcedd60ee436cdcb3d0b50a5aea7.png");
+    background-size: cover;
+    
+} */
+.imgbackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerderfinaldetail {
+    display: flex;
+}
+.detailContack {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.detailContack > h2 {
+    color: #C0C0C0;
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 23px 20px 0 53px;
+}
+.detailContack > h1 {
+    color: #332F29;
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    margin: -50px 20px 0 53px;
+    line-height: 1.1;
+    padding: 20px;
+}
+.detailContack > p {
+    margin: 20px 50px 30px 20px;
+    justify-content: center;
+}
+.imgcontack {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    width: 450px;
 }

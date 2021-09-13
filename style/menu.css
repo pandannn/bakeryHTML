@@ -1,0 +1,91 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+}
+
+/* navbar */
+.navbar {
+    background-color: #101010;
+    overflow: hidden;
+    position: -webkit- sticky;
+    position: sticky;
+    top: 0;
+}
+.navbar a {
+    float: left;
+    color: #faebd7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover { 
+    background-color: #FFBB9A;
+    color: #101010;
+
+}
+.seachContainer {
+    float: right;
+}
+.seachContainer input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    /* font-size: 17px; */
+    border: none;
+}
+.seachContainer button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #FFBB9A;
+    border: none;
+    cursor: pointer;
+}
+
+/* dropdow
+.dropdown{
+    position: relative;
+    display: inline-block;
+    background-color: #101010;
+}
+.dropdownbtnDessert {
+    background-color: #FFBB9A;
+    color: #101010;
+    padding: 17px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.btnDessert {
+    display: none;
+    position: absolute;
+    background-color: #faebd7;
+    min-width: 160px;
+    box-shadow: #101010;
+    z-index: 1;
+    }
+.btnDessert >a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+.btnDessert >a:hover {
+    background-color: aquamarine; 
+}
+.dropdown:hover .btnDessert {
+    display: block;
+} */
+
+.card{
+    position: relative;
+}
+
+.cardImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
